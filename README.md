@@ -17,8 +17,9 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 
 ## Steps high level
 ### Step 1: Register Your AWS DeepLens Device and Deploy an AWS DeepLens Sample Project to get started with deep lens
-
-
+### Step 2: Create a s3 bucket to store face images
+### Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
+### Step 4: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
 
 # Step 1: Register Your AWS DeepLens Device
 
@@ -28,6 +29,7 @@ https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started-register
 once registration is done, we will build and run the Head Pose Detection Project with TensorFlow-Trained Model
 https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-tensorflow-model.html
 
-# Step 2: 
+# Step 2: Create a s3 bucket to store face images
+
 
 
