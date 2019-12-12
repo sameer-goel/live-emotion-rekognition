@@ -12,5 +12,20 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 <img src="images/architecture.png">
 
 ## Pre-requisite
-1. Deeplens 
+1. DeepLens device (https://www.amazon.com/AWS-DeepLens-learning-enabled-developers/dp/B075Y3CK37)
 2. AWS Account with access to AWS services
+
+## Steps high level
+### Step 1: Register Your AWS DeepLens Device and Deploy an AWS DeepLens Sample Project to get started with deep lens
+
+
+
+# Step 1: Register Your AWS DeepLens Device
+
+If you are absolute beginner I would recommend to follow getting started guide.
+https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started-register.html
+
+once registration is done, we will build and run the Head Pose Detection Project with TensorFlow-Trained Model
+https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-tensorflow-model.html
+
+
