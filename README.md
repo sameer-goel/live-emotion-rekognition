@@ -88,36 +88,36 @@ https://console.aws.amazon.com/iam/home?region=us-east-1#/roles/AWSDeepLensGreen
 
 Till now we see on the IOT console that it is recognizing the faces. In next steps we will call rekognition to get the emotion.
 
-- Step 5: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
+# Step 5: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
 
-Create a dynamodb table https://console.aws.amazon.com/dynamodb/home
+- Create a dynamodb table https://console.aws.amazon.com/dynamodb/home
 
-Click on Create Table.
-Table name: rekognize-faces
-Primary key (string): s3key
-reave rest settings at default
-Click on Create. This will create a table in your DynamoDB.
+- Click on Create Table.
+- Table name: rekognize-faces
+- Primary key (string): s3key
+- leave rest settings at default
+- Click on Create. This will create a table in your DynamoDB.
 
 Create IAM role https://console.aws.amazon.com/iam/home?#/roles$new?step=type
 
 Choose Lambda service
 
 add below permissions
-AmazonS3FullAccess
-CloudWatchFullAccess
-AmazonDynamoDBFullAccess
-AmazonRekognitionFullAccess 
+- AmazonS3FullAccess
+- CloudWatchFullAccess
+- AmazonDynamoDBFullAccess
+- AmazonRekognitionFullAccess 
 <img src="images/rekognizeEmotions.png">
-Role name: rekognizeEmotions
+- Role name: rekognizeEmotions
 
 Click Create function https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/function
 
-Choose Author from scratch
-Name the function: Rekognize-emotions
-Runtime: Choose Python 2.7
-Role: Choose an existing role
-Existing role: rekognizeEmotions
-Choose Create function
+- Choose Author from scratch
+- Name the function: Rekognize-emotions
+- Runtime: Choose Python 2.7
+- Role: Choose an existing role
+- Existing role: rekognizeEmotions
+- Choose Create function
 <img src="images/lambda2.png">
 
 copy the code from  <a href="https://raw.githubusercontent.com/sameer-goel/live-emotion-rekognition/master/deeplens-sentiment-function/rekognize.py">here</a> 
@@ -125,23 +125,26 @@ make sure the dynamodb table name is same as yours created
 line 57: Table('rekognize-faces')
 
 add trigger to this function for any object created to s3
-Bucket name: (you created this bucket earlier)
+- Bucket name: (you created this bucket earlier)
 
-Event type: All object create events
-Prefix: faces/
-Suffix: .jpg
-Enable trigger: ON (keep the checkbox on)
-Press Add button
-Save the lambda function
+- Event type: All object create events
+- Prefix: faces/
+- Suffix: .jpg
+- Enable trigger: ON (keep the checkbox on)
+- Press Add button
+- Save the lambda function
 
 Now the faces data that is being pushed to S3 is getting passed through rekognition service for emotions
 
 # Step 6: Finally create Cloudwatch dashboard
 Create dashboard https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:
+
 Choose Line widget
 Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
 
 Add widget
+
 Choose number
+
 Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
 
