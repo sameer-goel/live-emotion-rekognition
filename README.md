@@ -9,5 +9,4 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 <img src="images/2.png">
 
 ## Architecture
-Below is the architecture of the setup we will be creating.
 <img src="images/architecture.png">
