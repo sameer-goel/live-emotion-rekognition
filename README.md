@@ -22,10 +22,12 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 
 # Step 1: Register Your AWS DeepLens Device
 
-If you are absolute beginner I would recommend to follow getting started guide.
+If you are absolute beginner I would recommend to follow getting started guide else skip to step 2.
 https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started-register.html
 
 once registration is done, we will build and run the Head Pose Detection Project with TensorFlow-Trained Model
 https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-tensorflow-model.html
+
+# Step 2: 
 
 
