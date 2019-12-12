@@ -54,6 +54,9 @@ Now click the SAVE button on the right top of the page
 
 replace the lambda_function.py with code <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">code</a> and forget to mention your bucket name at line 89
 line 89| bucket_name = "deepelens-faces-sameerg"
+SAVE the code again, and Publish a new version so that it can appear in DeepLens console
+
+<img src="images/lambda11.png">
 
 
 
