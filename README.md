@@ -48,7 +48,7 @@ Click Create Function.
 
 <img src="images/lambda1.png">
 
-Download this sample code template 
+Download this <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">sample code template</a>
 Under Function Code > Code entry type drop down > Upload a .zip file
 
 
