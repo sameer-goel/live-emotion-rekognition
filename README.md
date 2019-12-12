@@ -31,6 +31,7 @@ https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-te
 
 # Step 2: Create a s3 bucket to store face images
 https://console.aws.amazon.com/s3/home?region=us-east-1
+
 Create a bucket name with prefix deeplens-faces-<yourname>
 
 # Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
