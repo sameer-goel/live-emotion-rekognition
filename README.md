@@ -15,11 +15,11 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 1. DeepLens device (https://www.amazon.com/AWS-DeepLens-learning-enabled-developers/dp/B075Y3CK37)
 2. AWS Account with access to AWS services
 
-## Steps high level
-### Step 1: Register Your AWS DeepLens Device and Deploy an AWS DeepLens Sample Project to get started with deep lens
-### Step 2: Create a s3 bucket to store face images
-### Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
-### Step 4: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
+# Steps high level
+- Step 1: Register Your AWS DeepLens Device and Deploy an AWS DeepLens Sample Project to get started with deep lens
+- Step 2: Create a s3 bucket to store face images
+- Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
+- Step 4: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
 
 # Step 1: Register Your AWS DeepLens Device
 
@@ -32,5 +32,11 @@ https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-te
 # Step 2: Create a s3 bucket to store face images
 https://console.aws.amazon.com/s3/home?region=us-east-1
 Create a bucket name with prefix deeplens-faces-<yourname>
+
+# Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
+https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions
+
+
+
 
 
