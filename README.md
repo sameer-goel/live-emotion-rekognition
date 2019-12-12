@@ -9,7 +9,7 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 <img src="images/2.png">
 
 ## Architecture
-<img src="images/architecture1.png">
+<img src="images/architecture.png">
 
 ## Pre-requisite
 1. DeepLens device (https://www.amazon.com/AWS-DeepLens-learning-enabled-developers/dp/B075Y3CK37)
