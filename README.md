@@ -1,5 +1,3 @@
-# live-emotion-rekognition
-live-emotion-rekognition
+# Live Emotion Rekognition using DeepLens
 
-# live-emotion-rekognition
-live-emotion-rekognition
+<img src="images/1.png" width=150" height="70">
