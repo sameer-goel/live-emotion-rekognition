@@ -73,10 +73,29 @@ Next we create our custom model
 Add existing model and add the function we published
 <img src="images/dlcustom2.png">
 
+We will deploy this project to our device, it can several minutes.
+<img src="images/dlcustom3.png">
 
+* Note: If your model download progress hangs at a blank state (Not 0%, but blank) then you may need to reset greengrass on DeepLens. To do this, log onto the DeepLens device, open up a terminal, and type the following command: 
+sudo systemctl restart greengrassd.service --no-block
+After a couple minutes, you model should start to download.
 
+You can go to IOT to see published messages
 
+* Pushing to S3 failed: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+You have provide s3 permissions (AmazonS3FullAccess) to role AWSDeepLensGreengrassGroupRole
+https://console.aws.amazon.com/iam/home?region=us-east-1#/roles/AWSDeepLensGreengrassGroupRole
 
+Till now we see on the IOT console that it is recognizing the faces. In next steps we will call rekognition to get the emotion.
+
+- Step 5: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
+
+Create a dynamodb table https://console.aws.amazon.com/dynamodb/home
+Click on Create Table.
+Table name: rekognize-faces
+Primary key (string): s3key
+reave rest settings at default
+Click on Create. This will create a table in your DynamoDB.
 
 
 
