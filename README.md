@@ -4,6 +4,6 @@ We are using Deeplens and Amazon Rekognition service to detect emotions on a per
 
 ## Amazon Rekognition - Facial Analysis
 https://console.aws.amazon.com/rekognition/home?region=us-east-1#/face-detection
-<img src="images/1.png">
+<img src="images/1.png"></br>
 if you expand the Response of right hand side, you will see the various emotions detected from the face
 <img src="images/2.png">
