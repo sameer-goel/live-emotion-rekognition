@@ -138,13 +138,10 @@ Now the faces data that is being pushed to S3 is getting passed through rekognit
 
 # Step 6: Finally create Cloudwatch dashboard
 Create dashboard https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:
-
-Choose Line widget
-Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
+</br>Choose Line widget
+</br>Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
 
 Add widget
-
-Choose number
-
-Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
+</br>Choose number
+</br>Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
 
