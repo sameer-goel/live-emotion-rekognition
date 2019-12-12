@@ -30,6 +30,7 @@ once registration is done, we will build and run the Head Pose Detection Project
 https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-tensorflow-model.html
 
 # Step 2: Create a s3 bucket to store face images
-
+https://console.aws.amazon.com/s3/home?region=us-east-1
+Create a bucket name with prefix deeplens-faces-<yourname>
 
 
