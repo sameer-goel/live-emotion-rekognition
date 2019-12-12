@@ -19,7 +19,8 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 - Step 1: Register Your AWS DeepLens Device and Deploy an AWS DeepLens Sample Project to get started with deep lens
 - Step 2: Create a s3 bucket to store face images
 - Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
-- Step 4: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
+- Step 4: Create and deploy model on DeepLens device
+- Step 5: Create a lambda function that will push images data to from S3 bucket to DynamoDb and cloudwatch
 
 # Step 1: Register Your AWS DeepLens Device
 
@@ -48,18 +49,29 @@ Click Create Function.
 
 <img src="images/lambda1.png">
 
-Download this <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">sample code template</a>
+Download this <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip?raw=true">sample code template</a>
 Under Function Code > Code entry type drop down > Upload a .zip file
 Now click the SAVE button on the right top of the page
 
-replace the lambda_function.py with code <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">code</a> and forget to mention your bucket name at line 89
+replace the lambda_function.py with code <a href="https://raw.githubusercontent.com/sameer-goel/live-emotion-rekognition/master/deeplens-sentiment-function/lambda_function.py">code</a> and don forget to mention your bucket name at line 89
 line 89| bucket_name = "deepelens-faces-sameerg"
 SAVE the code again, and Publish a new version so that it can appear in DeepLens console.
 
 <img src="images/lambda11.png">
 
+# Step 4: Create and deploy model on DeepLens device
+
+We will create sample project from template just so that we have face detection model in our list, we will be re-using this pre-trained model along with the function we created in step 3
+
+Create Sample project from template
 https://us-east-1.console.aws.amazon.com/deeplens/home?region=us-east-1#projects/create
 <img src="images/dlsample.png">
+
+Next we create our custom model
+<img src="images/dlcustom1.png">
+
+Add existing model and add the function we published
+<img src="images/dlcustom2.png">
 
 
 
