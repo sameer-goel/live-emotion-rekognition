@@ -50,6 +50,13 @@ Click Create Function.
 
 Download this <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">sample code template</a>
 Under Function Code > Code entry type drop down > Upload a .zip file
+Now click the SAVE button on the right top of the page
+
+replace the lambda_function.py with code <a href="https://github.com/sameer-goel/live-emotion-rekognition/blob/master/deeplens-sentiment-function/deeplens-lambda.zip">code</a> and forget to mention your bucket name at line 89
+line 89| bucket_name = "deepelens-faces-sameerg"
+
+
+
 
 
 
