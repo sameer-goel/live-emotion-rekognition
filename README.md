@@ -33,6 +33,7 @@ https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-project-headpose-with-te
 https://console.aws.amazon.com/s3/home?region=us-east-1
 
 Create a bucket name with prefix deeplens-faces-yourname
+<img src="images/s3.png">
 
 # Step 3: Create a lambda function that will run on the DeepLens device and rekognize emotions
 https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions
@@ -44,6 +45,8 @@ Runtime: pyhton 2.7
 Role: Choose an existing role
 Existing Role: AWSDeepLensLambdaRole
 Click Create Function.
+
+<img src="images/lambda1.png">
 
 Download this sample code template 
 Under Function Code > Code entry type drop down > Upload a .zip file
