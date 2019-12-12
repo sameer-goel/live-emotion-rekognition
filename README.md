@@ -10,3 +10,7 @@ If we expand the <b>Response</b> of right hand side, you will see the various em
 
 ## Architecture
 <img src="images/architecture.png">
+
+## Pre-requisite
+1. Deeplens 
+2. AWS Account with access to AWS services
