@@ -145,3 +145,4 @@ Add widget
 </br>Choose number
 </br>Under Custom namespace click on "string" > Metrics with no dimention > select all emotions and create widget.
 
+<img src="images/cw_dashboard.png">
